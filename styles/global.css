@@ -1,0 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+a, p, li, h1, button, h2, h3, label, input, textarea{
+    font-family: 'Poppins', sans-serif;
+}

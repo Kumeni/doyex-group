@@ -1,0 +1,27 @@
+.content{
+    padding:6rem 0rem;
+    max-width:1000px;
+    margin:auto;
+}
+@media(max-width:1100px){
+    .content{
+        margin:auto 1rem;
+    }
+}
+.content h1{
+    font-weight:400;
+    font-size:1.8rem;
+    text-align: center;
+    /* margin: 2rem auto 3rem auto; */
+}
+.content h2{
+    font-weight:400;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+}
+.content p{
+    margin-bottom:1.5rem;
+}
+.underline{
+    margin-bottom:2rem;
+}

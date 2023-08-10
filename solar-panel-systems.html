@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scripts/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/actionButtons.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/products_landing.css" />
+
+    <link rel="shortcut icon" href="./icons/shortcut icon.png" />
+
+    <meta 
+        name="description" 
+        content="Unleash the power of the sun with Doyex Group Limited, your
+        ultimate destination for top-tier solar panel systems. Experience energy independence and significant savings - get in touch
+        today to embark on your journey toward a brighter, greener future."
+    />
+
+    <!-- Our team of experts delivers sustainable and affordable energy solutions 
+        to meet your unique needs. Contact us today for a free consultation!" -->
+
+    <meta 
+        name="keywords" 
+        content="Solar panel systems for sale, doyex group"
+    />
+
+    <title>Solar Panel Systems for sale | Doyex Group</title>
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo">
+            <a href="./">
+                <img src="./images/Doyex group logo.png" alt = "Doyex group logo" />
+            </a>
+        </div>
+        <a class="header_small" href="./">
+            <h1>SOLAR PRIME</h1>
+        </a>
+        <ul class="header_links">
+            <li class="header_services">
+                <div>Products &darr;</div>
+                <div>
+                    <ul>
+                        <a href="./beko-home-appliances.html">Beko home appliances</a>
+                        <a href="./solar-panel-systems.html">Solar panel systems</a>
+                        <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                        <a href="./wardrobes.html">Wardrobes</a>
+                        <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                        <a href="./doors.html">Doors</a>
+                        <a href="./windows.html">Windows</a>
+                    </ul>
+                </div>
+            </li>
+            <a href="./about-us.html">About us</a>
+            <!-- <a href="#">About us</a> -->
+            <a href="#footer">Contact us</a>
+        </ul>
+        <div id="menu_bars" class="bars" onclick="handleMenuClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <nav class="navigation menu_info">
+            <ul>
+                <a href="./beko-home-appliances.html">Beko home appliances</a>
+                <a href="./solar-panel-systems.html">Solar panel systems</a>
+                <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                <a href="./wardrobes.html">Wardrobes</a>
+                <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                <a href="./doors.html">Doors</a>
+                <a href="./windows.html">Windows</a>
+                <a href = "./">Homepage</a>
+                <a href = "./about-us.html">About us</a>
+                <a href = "./#footer">Contact us</a>
+            </ul>
+        </nav>
+        
+        <style>
+            .mosaic{
+                display:grid;
+                width:max-content;
+                margin:auto;
+                grid-template-columns: max-content max-content max-content max-content;
+                column-gap:1rem;
+                justify-content: center;
+            }
+            .box{
+                position:relative;
+                display:block;
+                width:22vw;
+            }
+            @media(max-width:1296px){
+                .mosaic{
+                    grid-template-columns:repeat(3, 30%);
+                    column-gap:2rem;
+                }
+                .box{
+                    width:30vw;
+                }
+            }
+            @media (max-width:768px){
+                .mosiac{
+                    grid-template-columns:repeat(2, 46%);
+                    column-gap:1rem;
+                }
+                .box{
+                    width:46vw;
+                }
+            }
+            @media (max-width:600px){
+                .mosaic{
+                    grid-template-columns:repeat(2, 46%);
+                    column-gap:1rem;
+                }
+                .box{
+                    width:46vw;
+                }
+            }
+            
+            .box{
+                border-radius:10px;
+            }
+        </style>
+        <section class="products_landing">
+            <h1>SOLAR PANEL SYSTEMS</h1>
+            <!-- <p>
+                Unleash the power of the sun with Doyex Group Limited, your
+                ultimate destination for top-tier solar panel systems. Our 
+                cutting-edge technology, unmatched efficiency, and commitment
+                to sustainability set us apart as the leaders in the field.
+                Experience energy independence and significant savings - get in touch
+                today to embark on your journey toward a brighter, greener future.
+            </p>
+            <a href="#footer" class="more">Contact us</a> -->
+        </section>
+        <section class="mosaic">
+            
+            <img class="box" src="./images/solar panel systems/Best Roof Pitch for Solar Panels vs Solar Panel Tilt _ Modernize.jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/Cost of Solar Panels in 2022_ What to Expect.jpeg" alt="Solar panel systems" />
+            
+            <!-- <img class="box" src="./images/solar panel systems/ExpertPower Solar Panel Kit for RV Off Grid Solar Power System _ 4pcs 100W Solar Panel+30A MPPT Charge Controller+1 pcs 200Ah Gel Deep Cycle Battery+ 3000 W Pure Sine Wave Inverter Charger.jpeg" alt="Solar panel systems" /> -->
+            
+            <img class="box" src="./images/solar panel systems/How Colorado's New Energy Storage Bill will Impact Solar Contractors (1).jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/How Colorado's New Energy Storage Bill will Impact Solar Contractors.jpeg" alt="Solar panel systems" />
+            
+            <img class="box" src="./images/solar panel systems/How to Make Fake Homemade Solar Panels _ ehow_com.jpeg" alt="Solar panel systems" />
+            <!-- <img class="box" src="./images/solar panel systems/images.jpeg" alt="Solar panel systems" /> -->
+            <!-- <img class="box" src="./images/solar panel systems/Innovative Project Is Growing Crops Beneath Solar Panels in Kenya.jpeg" alt="Solar panel systems" /> -->
+            <img class="box" src="./images/solar panel systems/Premium Photo _ Solar panel photovoltaic installation on a roof of factory.jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/Rooftop Solar Powered System.jpeg" alt="Solar panel systems" />
+            <!-- <img class="box" src="./images/solar panel systems/Solar Air Conditioner-China Solar Air Conditioner Manufacturer.jpeg" alt="Solar panel systems" /> -->
+            <img class="box" src="./images/solar panel systems/Solar Panel Kits _ ECO-WORTHY.jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/Solar Panels Flexible 100_200_300W solar controller 12V  battery charger - Shipping to all countries _ 100w solar panel.jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/Support Illinois Solar - Enter to Win a Home Solar Installation from ISEA - CleanTechnica.jpeg" alt="Solar panel systems" />
+            <img class="box" src="./images/solar panel systems/What are the benefits of having solar power with battery backup system_.jpeg" alt="Solar panel systems" />
+            <!-- <img class="box" src="./images/solar panel systems/Free Photo _ 3d render of a robot holding a solar panel on a grassy glboe.jpeg" alt="Solar panel systems" /> -->
+            <img class="box" src="./images/solar panel systems/220V Solar Power System 30W Solar Panel 1000W Inverter 100A Controller Kit Solar Panel Battery Charger - B.png" alt="Solar panel systems" />
+            <!-- <img class="box" src="./images/solar panel systems/Solar panel system 2.png" alt ="Solar panel systems" /> -->
+            <img class="box" src="./images/solar panel systems/Allpowers 2000w Portable Power Station & 200w Foldable Solar Panel For Camping.jpeg" alt="Solar panel systems" />
+            <!-- <img class="box" src="./images/solar panel systems/How Solar Power and Battery Backup Works - SolarCraft.jpeg" alt="Solar panel systems" /> -->
+            <img class="box" src="./images/solar panel systems/ExpertPower Solar Panel Kit for RV Off Grid Solar Power System.jpeg" alt="Solar panel systems" />
+        </section>
+        <script>
+    
+            function mosaic(boxes, separation=30){
+                let availableColumns = [];
+    
+                //This block creates the number of columns
+                let i, j, end=false, k;
+                for (j = 0; j < boxes.length; j++){
+                    if ( availableColumns.length ==0 ){
+                        availableColumns.push({
+                            left:boxes[j].getBoundingClientRect().x
+                        })
+                        continue;
+                    }
+    
+                    //The code to know the column already exists
+                    for (i=0; i<availableColumns.length; i++){
+                        if(availableColumns[i].left == boxes[j].getBoundingClientRect().x){
+                            end=true;
+                            break;
+                        }
+                    }
+                    
+                    if(end)
+                        break;
+                    availableColumns.push({
+                        left:boxes[j].getBoundingClientRect().x
+                    })
+                }
+                //console.log(availableColumns);
+    
+                //this block loops through all the boxes in the viewport
+                let m;
+                for (m=0; m < boxes.length; m++){
+                    //This block targets the box above current box
+                    let l, element=boxes[m];
+                    for ( k = 0; k < availableColumns.length; k++){
+                        if(element.getBoundingClientRect().x == availableColumns[k].left){
+                            if(m-availableColumns.length >= 0){
+                                let initialRowTop = boxes[m-availableColumns.length].offsetTop;
+                                    nextRowStart = initialRowTop + boxes[m-availableColumns.length].getBoundingClientRect().height + separation;
+                                    element.style.top = nextRowStart-element.offsetTop+"px";
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+    
+            setTimeout(()=>{
+                mosaic(document.getElementsByClassName("box"), 20);
+                document.getElementsByClassName("mosaic")[0].height = boxes[boxes.length-1].offsetTop+boxes[boxes.length-1].getBoundingClientRect().height+"px";
+            }, 2000)
+        </script>
+    </main>
+    <footer id="footer" class="footer">
+        <p><strong>GET IN TOUCH</strong></p>
+        <ul class="get_in_touch">
+            <a href="https://wa.me/254740282828?text=Hello Doyex Group," title="whatsapp"><img src = "./icons/whatsapp icon.png" alt = "whatsapp icon" /></a>
+            <a href="mailto:doyex@doyexgroup.com" title="email"><img src="./icons/gmail icon.png" alt = "gmail icon" /></a>
+            <a href="tel:+254740343434" title="phone"><img src = "./icons/phone icon.png" alt = "phone icon" /></a>
+        </ul>
+        <div class="footer_links">
+            <ul>
+                <li>Contacts</li>
+                <a href="tel:+254724254254">+254724 254 254</a>
+                <a href="tel:+254740343434">+254740 34 34 34</a>
+                <a href="mailto:doyex@doyexgroup.com">doyex@doyexgroup.com</a>
+            </ul>
+            <ul>
+                <li>Our products</li>
+                <a href="./beko-home-appliances.html">Beko home appliances</a>
+                <a href="./solar-panel-systems.html">Solar panel systems</a>
+                <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                <a href="./wardrobes.html">Wardrobes</a>
+                <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                <a href="./doors.html">Doors</a>
+                <a href="./windows.html">Windows</a>
+            </ul>
+            <div class="footer_maps">
+                <iframe class="footer_maps" href="./index.html"></iframe>
+                <p>Lower Kabete road, Kanha Building Upper Ground Floor, Westlands</p>
+            </div>
+            
+        </div>
+        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/254740282828?text=Hello Doyex Group," title="whatsapp"><img src = "./icons/whatsapp.png" alt = "whatsapp icon" /></a>
+    <script src = "./scripts/menu_click.js"></script>
+    <script src = "./scripts/contact-us.js"></script>
+    <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
+    <script src = "./scripts/swiper/initialize-swiper.js"></script>
+</body>
+</html>

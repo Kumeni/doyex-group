@@ -1,0 +1,13 @@
+main{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+main{
+    align-content: center;
+    height: 70vh;
+}
+main h1{
+    font-size: 1.2rem;
+    text-align: center;
+}

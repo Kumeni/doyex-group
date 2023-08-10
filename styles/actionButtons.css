@@ -1,0 +1,18 @@
+.more{
+    margin-top:1rem;
+    padding: 0.8rem 2rem;
+    border: 3px solid gold;
+    text-decoration: none;
+    font-weight: 400;
+    transition: box-shadow 1s;
+}
+
+@media (max-width:425px){
+    .more{
+        font-size:1.18rem;
+    }
+}
+.more:hover{
+    box-shadow: -2px 2px 10px rgb(60, 60, 60);
+    font-weight:500;
+}

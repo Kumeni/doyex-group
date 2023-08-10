@@ -1,0 +1,143 @@
+.header, .header_links, .header_services{
+    display:grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+.header{
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    max-width:1400px;
+    margin: auto;
+    position: sticky;
+    z-index:100;
+    top: 0px;
+    padding:0.8rem 3rem 0.8rem 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+}
+.header ul{
+    align-self: center;
+}
+.logo{
+    height:32px;
+    padding-top:0.3rem;
+}
+.logo img{
+    height:100%;
+    width: auto;
+}
+.header_links{
+    grid-template-columns: repeat(3, 120px);
+}
+.header_services a{
+    display: block;
+}
+.header_services > div:last-of-type{
+    position: relative;
+    z-index:200;
+}
+.header_services > div:last-of-type > ul{
+    position:absolute;
+    width: 300px;
+    padding-top: 1rem;
+    z-index:200;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.header_services > div:last-of-type > ul > a{
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    display: block;
+    width:100%;
+}
+.header_services > div:last-of-type > ul > a:hover{
+    border-left: 2px solid orange;
+}
+.header_services > div:last-of-type > ul > a:not(:last-of-type){
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.header_services > div:last-of-type{
+    display: none;
+}
+.header_services:hover div{
+    display: block;
+}
+.header_links a{
+    text-decoration: none;
+}
+.header_services > div:first-of-type:hover{
+    cursor: pointer;
+}
+.bars,.header_small, .navigation{
+    display: none;
+}
+/*.header_small{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+.header_small > h1{
+    font-size:1.4rem;
+    font-weight: 500;
+}*/
+.bars{
+    width:33px;
+    height:33px;
+    align-self: center;
+}
+.bars > div {
+    background-color:black;
+    height:2px;
+    margin:6px 0px;
+    transition: width 0.2s;
+}
+
+.bars > div:nth-of-type(2){
+    width:50%;
+}
+.bars > div:last-of-type{
+    width:25%;
+}
+main{
+    position:relative;
+    overflow: hidden;
+}
+.navigation{
+    position: absolute;
+    z-index:10;
+    width:0%;
+    min-height: 100vh;
+    background-color: white;
+    transition: width 0.5s;
+    padding-top:5rem;
+    /*white-space: nowrap;
+    overflow: hidden;*/
+}
+.navigation ul{
+    position: absolute;
+    right: 0px;
+    width: 100vw;
+}
+.navigation ul a{
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+@media(max-width: 767px){
+    .header{
+        padding:1rem 1.5rem 1rem 1.5rem;
+        border: 1px solid rgb(210, 210, 210);
+    }
+    .header_links{
+        display: none;
+    }
+    .bars, .navigation{
+        display: block;
+    }
+    .logo{
+    }
+}

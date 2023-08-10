@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scripts/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/actionButtons.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/products_landing.css" />
+
+    <link rel="shortcut icon" href="./icons/shortcut icon.png" />
+
+    <meta 
+        name="description" 
+        content=" Our exquisite range of kitchen cabinets redefines craftsmanship and design 
+                excellence. Transform your space today - reach out to us and let our cabinets 
+                be the conerstone of your dream kitchen."
+    />
+
+    <!-- Our team of experts delivers sustainable and affordable energy solutions 
+        to meet your unique needs. Contact us today for a free consultation!" -->
+
+    <meta 
+        name="keywords" 
+        content="Kitchen cabinets for sale, doyex group"
+    />
+
+    <title>Kitchen Cabinets for sale | Doyex Group</title>
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo">
+            <a href="./">
+                <img src="./images/Doyex group logo.png" alt = "Doyex group logo" />
+            </a>
+        </div>
+        <a class="header_small" href="./">
+            <h1>SOLAR PRIME</h1>
+        </a>
+        <ul class="header_links">
+            <li class="header_services">
+                <div>Products &darr;</div>
+                <div>
+                    <ul>
+                        <a href="./beko-home-appliances.html">Beko home appliances</a>
+                        <a href="./solar-panel-systems.html">Solar panel systems</a>
+                        <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                        <a href="./wardrobes.html">Wardrobes</a>
+                        <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                        <a href="./doors.html">Doors</a>
+                        <a href="./windows.html">Windows</a>
+                    </ul>
+                </div>
+            </li>
+            <a href="./about-us.html">About us</a>
+            <!-- <a href="#">About us</a> -->
+            <a href="#footer">Contact us</a>
+        </ul>
+        <div id="menu_bars" class="bars" onclick="handleMenuClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <nav class="navigation menu_info">
+            <ul>
+                <a href="./beko-home-appliances.html">Beko home appliances</a>
+                <a href="./solar-panel-systems.html">Solar panel systems</a>
+                <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                <a href="./wardrobes.html">Wardrobes</a>
+                <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                <a href="./doors.html">Doors</a>
+                <a href="./windows.html">Windows</a>
+                <a href = "./">Homepage</a>
+                <a href = "./about-us.html">About us</a>
+                <a href = "./#footer">Contact us</a>
+            </ul>
+        </nav>
+        
+        <style>
+            .mosaic{
+                display:grid;
+                width:max-content;
+                margin:auto;
+                grid-template-columns: max-content max-content max-content max-content;
+                column-gap:1rem;
+                justify-content: center;
+            }
+            .box{
+                position:relative;
+                display:block;
+                width:22vw;
+            }
+            @media(max-width:1296px){
+                .mosaic{
+                    grid-template-columns:repeat(3, 30%);
+                    column-gap:2rem;
+                }
+                .box{
+                    width:30vw;
+                }
+            }
+            @media (max-width:768px){
+                .mosiac{
+                    grid-template-columns:repeat(2, 46%);
+                    column-gap:1rem;
+                }
+                .box{
+                    width:46vw;
+                }
+            }
+            @media (max-width:600px){
+                .mosaic{
+                    grid-template-columns:repeat(2, 46%);
+                    column-gap:1rem;
+                }
+                .box{
+                    width:46vw;
+                }
+            }
+            
+            .box{
+                border-radius:10px;
+            }
+        </style>
+        <section class="products_landing">
+            <h1>KITCHEN CABINETS</h1>
+            <!-- <p>
+                Elevate your kitchen to new heights of elegance and functionality with Doyex Group Limited.
+                Our exquisite range of kitchen cabinets redefines craftsmanship and design 
+                excellence. From timeless classics to modern marvels, our 
+                cabinets are a testament to superior quality and style. Transform your space 
+                today - reach out to us and let our cabinets be the conerstone of your dream kitchen.
+            </p>
+            <a href="#footer" class="more">Contact us</a> -->
+        </section>
+        <section class="mosaic">
+            <img class="box" src="./images/kitchen cabinets/12 Great Ideas to Update Kitchen Cabinets in Your House.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/13f79fa0-bbc6-4147-8da9-013b99fe1dfa.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/1bf5518c-91ca-42ef-a5a4-ae2fa550c7f1.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/20 Fresh Kitchen Design Inspirations from Pinterest.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/25 Not-Boring Gray Kitchen Ideas That You'll Absolutely Love.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/34+ ( Top ) Green Kitchen Cabinets - _ Good for Kitchen_ _ Get Ideas_.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/28 Red Kitchen Ideas with Red Cabinets (Photos).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/44+ Gray Kitchen Cabinets ( DARK or HEAVY _ ) - Dark, Light & Modern! (1).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/44+ Gray Kitchen Cabinets ( DARK or HEAVY _ ) - Dark, Light & Modern! (2).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/44+ Gray Kitchen Cabinets ( DARK or HEAVY _ ) - Dark, Light & Modern! (3).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/11 Beautiful Kitchen Island Ideas for Your Next Renovation.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/44+ Gray Kitchen Cabinets ( DARK or HEAVY _ ) - Dark, Light & Modern!.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/53 m² organizados com móveis sob medida e decorados com tons pastel.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/53+ Two Tone Kitchen Cabinets ( STYLISH & TRENDY ) - Cabinet Designs.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/6 Ways to Take a Basic Builder-Grade Condo From Whoa to Wow.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/66+ Wood Kitchen Countertops ( TIMELESS CLASSIC ) - Countertops.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/7 HDB Flat Built-In Ideas Created with Neat Freaks in Mind.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/7 Kitchen Cabinet Ideas For Your Next Kitchen Design - Lifesoever.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/All the What's, Why's & How Much's of the Portland Kitchen (+ Big Reveal) - Emily Henderson.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Best modular kitchen design ideas and new trend - Page 42 of 56 - Womensays_com Women Blog.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Black is beautiful_ Küchenplanung einer Küche von Schüller.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Cabinetry Paint Archives.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Cozinha bege_ 70 fotos para um ambiente neutro e elegante (1).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Cozinha bege_ 70 fotos para um ambiente neutro e elegante.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Cozinha contemporânea com ilha e bancada em quartzito Perla Santana!.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Design Inspiration_ Our Most Pinned Images From May 2021 • One Brick At A Time.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Easy Woodworking Projects for Beginners _ Woodworking Projects.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/How to Choose and Install LED Strip Lights for Kitchen Cabinets.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/How to use corner units effectively - The Used Kitchen Company.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Kitchen Cabinets are In!!! — Lesley W Graham.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Kitchen With Gray Cabinets_ Why To Choose This Trend - Decoholic.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Mumbai_ This plush apartment by Zero9 is all about luxury and opulence.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/The Most Popular Cabinet Wood Species.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/These Wood Kitchen Ideas Will Totally Transform the Space.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/This Mumbai Apartment Is Your Handbook to Hygge.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Top 50 Kitchen interior design_Kitchen design ideas with wood cabinets _wood cabinets kitchen design (1).jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Top 50 Kitchen interior design_Kitchen design ideas with wood cabinets _wood cabinets kitchen design.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Unusual Kitchen Cabinet Designs (That You May Just Fall in Love With).png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Выглядит вкусно_ 9 беспроигрышных сочетаний цветов для кухни.jpeg" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Как сделать интерьер квартиры функциональным и удобным_ 4 простых совета дизайнера.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Какой высоты должна быть кухня_ Высота столешницы, фартука и навесных шкафов.png" alt="Kitchen cabinet" />
+            <img class="box" src="./images/kitchen cabinets/Портфолио_ дизайн интерьера квартир, домов, офисов и коммерческих помещений_ 300+ дизайн проектов.jpeg" alt="Kitchen cabinet" />
+        </section>
+        <script>
+    
+            function mosaic(boxes, separation=30){
+                let availableColumns = [];
+    
+                //This block creates the number of columns
+                let i, j, end=false, k;
+                for (j = 0; j < boxes.length; j++){
+                    if ( availableColumns.length ==0 ){
+                        availableColumns.push({
+                            left:boxes[j].getBoundingClientRect().x
+                        })
+                        continue;
+                    }
+    
+                    //The code to know the column already exists
+                    for (i=0; i<availableColumns.length; i++){
+                        if(availableColumns[i].left == boxes[j].getBoundingClientRect().x){
+                            end=true;
+                            break;
+                        }
+                    }
+                    
+                    if(end)
+                        break;
+                    availableColumns.push({
+                        left:boxes[j].getBoundingClientRect().x
+                    })
+                }
+                //console.log(availableColumns);
+    
+                //this block loops through all the boxes in the viewport
+                let m;
+                for (m=0; m < boxes.length; m++){
+                    //This block targets the box above current box
+                    let l, element=boxes[m];
+                    for ( k = 0; k < availableColumns.length; k++){
+                        if(element.getBoundingClientRect().x == availableColumns[k].left){
+                            if(m-availableColumns.length >= 0){
+                                let initialRowTop = boxes[m-availableColumns.length].offsetTop;
+                                    nextRowStart = initialRowTop + boxes[m-availableColumns.length].getBoundingClientRect().height + separation;
+                                    element.style.top = nextRowStart-element.offsetTop+"px";
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+    
+            setTimeout(()=>{
+                mosaic(document.getElementsByClassName("box"), 20);
+                document.getElementsByClassName("mosaic")[0].height = boxes[boxes.length-1].offsetTop+boxes[boxes.length-1].getBoundingClientRect().height+"px";
+            }, 2000)
+
+            
+        </script>
+    </main>
+    <footer id="footer" class="footer">
+        <p><strong>GET IN TOUCH</strong></p>
+        <ul class="get_in_touch">
+            <a href="https://wa.me/254740282828?text=Hello Doyex Group," title="whatsapp"><img src = "./icons/whatsapp icon.png" alt = "whatsapp icon" /></a>
+            <a href="mailto:doyex@doyexgroup.com" title="email"><img src="./icons/gmail icon.png" alt = "gmail icon" /></a>
+            <a href="tel:+254740343434" title="phone"><img src = "./icons/phone icon.png" alt = "phone icon" /></a>
+        </ul>
+        <div class="footer_links">
+            <ul>
+                <li>Contacts</li>
+                <a href="tel:+254724254254">+254724 254 254</a>
+                <a href="tel:+254740343434">+254740 34 34 34</a>
+                <a href="mailto:doyex@doyexgroup.com">doyex@doyexgroup.com</a>
+            </ul>
+            <ul>
+                <li>Our products</li>
+                <a href="./beko-home-appliances.html">Beko home appliances</a>
+                <a href="./solar-panel-systems.html">Solar panel systems</a>
+                <a href="./kitchen-cabinets.html">Kitchen Cabinets</a>
+                <a href="./wardrobes.html">Wardrobes</a>
+                <a href="./bathroom-cabinets.html">Bathroom cabinets</a>
+                <a href="./doors.html">Doors</a>
+                <a href="./windows.html">Windows</a>
+            </ul>
+            <div class="footer_maps">
+                <iframe class="footer_maps" href="./index.html"></iframe>
+                <p>Lower Kabete road, Kanha Building Upper Ground Floor, Westlands</p>
+            </div>
+            
+        </div>
+        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/254740282828?text=Hello Doyex Group," title="whatsapp"><img src = "./icons/whatsapp.png" alt = "whatsapp icon" /></a>
+    <script src = "./scripts/menu_click.js"></script>
+    <script src = "./scripts/contact-us.js"></script>
+    <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
+    <script src = "./scripts/swiper/initialize-swiper.js"></script>
+</body>
+</html>
