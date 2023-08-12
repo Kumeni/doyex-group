@@ -10,6 +10,13 @@
         margin-top:7rem;
     }
 }
+@media(max-width:425px){
+    .products_landing h1{
+        max-width:80%;
+        margin: 7rem auto 0rem auto;
+        font-size:1.8rem;
+    }
+}
 .products_landing p{
     max-width:800px;
     margin:3rem auto 3rem 13rem;
