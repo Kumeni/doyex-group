@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/actionButtons.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/products_landing.css" />
-
+    <link rel="stylesheet" href="./styles/mosaic.css" />
     <link rel="shortcut icon" href="./icons/shortcut icon.png" />
 
     <meta 
@@ -84,53 +84,6 @@
                 <a href = "./#footer">Contact us</a>
             </ul>
         </nav>
-        
-        <style>
-            .mosaic{
-                display:grid;
-                width:max-content;
-                margin:auto;
-                grid-template-columns: max-content max-content max-content max-content;
-                column-gap:1rem;
-                justify-content: center;
-            }
-            .box{
-                position:relative;
-                display:block;
-                width:22vw;
-            }
-            @media(max-width:1296px){
-                .mosaic{
-                    grid-template-columns:repeat(3, 30%);
-                    column-gap:2rem;
-                }
-                .box{
-                    width:30vw;
-                }
-            }
-            @media (max-width:768px){
-                .mosiac{
-                    grid-template-columns:repeat(2, 46%);
-                    column-gap:1rem;
-                }
-                .box{
-                    width:46vw;
-                }
-            }
-            @media (max-width:600px){
-                .mosaic{
-                    grid-template-columns:repeat(2, 46%);
-                    column-gap:1rem;
-                }
-                .box{
-                    width:46vw;
-                }
-            }
-            
-            .box{
-                border-radius:10px;
-            }
-        </style>
         <section class="products_landing">
             <h1>WINDOWS</h1>
             <!-- <p>
@@ -140,6 +93,7 @@
             </p>
             <a href="#footer" class="more">Contact us</a> -->
         </section>
+        <script src="./scripts/mosaic.js"></script>
         <section class="mosaic">
             <img class="box" src="./images/windows/706f88d2-cf77-4538-8e82-f53c469eb88d.jpeg" alt="Wndows" />
             <img class="box" src="./images/windows/A stunning modern extension of a heritage home.jpeg" alt="Wndows" />
@@ -166,61 +120,7 @@
             <img class="box" src="./images/windows/What You Need to Know About Replacing Your Windows and Doors.jpeg" alt="Wndows" />
             <img class="box" src="./images/windows/window drawing.jpeg" alt="Wndows" />
         </section>
-        <script>
-    
-            function mosaic(boxes, separation=30){
-                let availableColumns = [];
-    
-                //This block creates the number of columns
-                let i, j, end=false, k;
-                for (j = 0; j < boxes.length; j++){
-                    if ( availableColumns.length ==0 ){
-                        availableColumns.push({
-                            left:boxes[j].getBoundingClientRect().x
-                        })
-                        continue;
-                    }
-    
-                    //The code to know the column already exists
-                    for (i=0; i<availableColumns.length; i++){
-                        if(availableColumns[i].left == boxes[j].getBoundingClientRect().x){
-                            end=true;
-                            break;
-                        }
-                    }
-                    
-                    if(end)
-                        break;
-                    availableColumns.push({
-                        left:boxes[j].getBoundingClientRect().x
-                    })
-                }
-                //console.log(availableColumns);
-    
-                //this block loops through all the boxes in the viewport
-                let m;
-                for (m=0; m < boxes.length; m++){
-                    //This block targets the box above current box
-                    let l, element=boxes[m];
-                    for ( k = 0; k < availableColumns.length; k++){
-                        if(element.getBoundingClientRect().x == availableColumns[k].left){
-                            if(m-availableColumns.length >= 0){
-                                let initialRowTop = boxes[m-availableColumns.length].offsetTop;
-                                    nextRowStart = initialRowTop + boxes[m-availableColumns.length].getBoundingClientRect().height + separation;
-                                    element.style.top = nextRowStart-element.offsetTop+"px";
-                            }
-                            break;
-                        }
-                    }
-                }
-            }
-    
-            let boxes = document.getElementsByClassName("box");
-            setTimeout(()=>{
-                mosaic(document.getElementsByClassName("box"), 20);
-                document.getElementsByClassName("mosaic")[0].height = boxes[boxes.length-1].offsetTop+boxes[boxes.length-1].getBoundingClientRect().height+"px";
-            }, 2000)
-        </script>
+        
     </main>
     <footer id="footer" class="footer">
         <p><strong>GET IN TOUCH</strong></p>
@@ -247,7 +147,7 @@
                 <a href="./windows.html">Windows</a>
             </ul>
             <div class="footer_maps">
-                <iframe class="footer_maps" description="Doyex Group google maps location" src="https://www.google.com/maps/place/KANHA/@-1.2576939,36.721361,13z/data=!4m6!3m5!1s0x182f17e7467dde85:0xd3f4fe39948fed44!8m2!3d-1.2601256!4d36.8027463!16s%2Fg%2F11tww8pycm?entry=ttu"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2133519107751!2d36.80152857502568!3d-1.260125599715489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17e7467dde85%3A0xd3f4fe39948fed44!2sKANHA!5e0!3m2!1sen!2ske!4v1691841776412!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <p>Lower Kabete road, Kanha Building Upper Ground Floor, Westlands</p>
             </div>
             

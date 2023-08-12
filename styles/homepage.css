@@ -99,6 +99,11 @@
     margin-bottom: 1rem;
     font-size:1.1rem;
 }
+@media(min-width:705px) and ( max-width:1153px){
+    .services_content p{
+        margin-top:4rem;
+    }
+}
 @media (max-width: 425px){
     .services_content{
         padding:1rem 1rem;
