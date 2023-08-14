@@ -93,6 +93,8 @@
 @media (max-width: 425px){
     .services > div > h3{
         text-align: center;
+        max-width:80%;
+        margin:2rem auto;
     }
 }
 .services_content p{
