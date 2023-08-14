@@ -90,7 +90,8 @@
             </div>
         </section>
         <script>
-            document.getElementsByClassName("landing")[0].style.minHeight = window.innerHeight+"px";
+            if(window.innerHeight < 425)
+                document.getElementsByClassName("landing")[0].style.minHeight = window.innerHeight+"px";
         </script>
         <section class = "services">
             <h2>OUR PRODUCTS</h2>
