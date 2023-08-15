@@ -90,3 +90,10 @@ setTimeout(()=>{
     mosaic(document.getElementsByClassName("box"), 20);
     document.getElementsByClassName("mosaic")[0].height = boxes[boxes.length-1].offsetTop+boxes[boxes.length-1].getBoundingClientRect().height+"px";
 }, 2000)
+const removeMosiac = () => {
+    let i;
+    for(i=0; i < boxes.length; i++){
+        boxes[i].style.top = "0px";
+    }
+}
+window.addEventListener("resize", removeMosaic());
