@@ -67,6 +67,10 @@ function mosaic(boxes, separation=30){
          * This code gets the largest bottom and updates the height of the mosaic
          * Get the bottoms of the last row and use them to set the height;
          */
+        if(pixelsFromTop + boxes[m].getBoundingClientRect().height > containerHeight){
+            containerHeight = pixelsFromTop + boxes[m].getBoundingClientRect().height;
+        };
+        if(m== boxes.length -1) document.getElementsByClassName("mosaic")[0].style.height = containerHeight+100+"px";
     }
 }
 
