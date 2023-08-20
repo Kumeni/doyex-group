@@ -1,3 +1,4 @@
+let initialMosaicHeight;
 function mosaic(boxes, separation=30){
     let availableColumns = [];
 
@@ -25,40 +26,17 @@ function mosaic(boxes, separation=30){
             left:boxes[j].getBoundingClientRect().x
         })
     }
-    //console.log(availableColumns);
-
-    //this block loops through all the boxes in the viewport
-    let m;
+    
+    let m, rowTop = rowBottom = document.getElementsByClassName("mosaic")[0].offsetTop, nextLongestImage, lowestBottom = 0, containerHeight = 0;
     for (m=0; m < boxes.length; m++){
 
         //obtain the maximum height of the row
-        //use it as the element.offsetTop
-        //update after every 4 loops
-
-        //This block targets the box above current box
-        let l=m-availableColumns.length, element=boxes[m], top=0;
-        while(l >= 0){
-            for ( k = 0; k < availableColumns.length; k++){
-                if(element.getBoundingClientRect().x == availableColumns[k].left){
-                    top = top + boxes[l].getBoundingClientRect().height + separation;
-                    break;
-                }
-            }
-            l = l -availableColumns.length;
-        }
-
-        element.style.top = (top - element.offsetTop+document.getElementsByClassName("mosaic")[0].offsetTop) + "px";
-    }
-    /*let m, rowBottom = document.getElementsByClassName("mosaic")[0].offsetTop, nextLongestImage;
-    for (m=0; m < boxes.length; m++){
-
-        //obtain the maximum height of the row
+        let max;
         if(m%availableColumns.length === 0){
             //if its the first element in the row, find the bottom of the row
-            let max=0;
-            for(i=m; i<m+availableColumns.length; i++){
+            max=0;
+            for(i=m; (i<m+availableColumns.length && i<boxes.length); i++){
                 //loop through all the elements in the row to find the bottom 
-                //console.log(boxes[i].getBoundingClientRect().height);
                 if(boxes[i].getBoundingClientRect().height > max){
                     max=boxes[i].getBoundingClientRect().height;
                     nextLongestImage = i;
@@ -68,29 +46,36 @@ function mosaic(boxes, separation=30){
         }
         //use it as the element.offsetTop
         //update after every 4 loops
-
-        //This block targets the box above current box
-        let l=m-availableColumns.length, element=boxes[m], top=0;
-        while(l >= 0){
-            for ( k = 0; k < availableColumns.length; k++){
-                if(element.getBoundingClientRect().x == availableColumns[k].left){
-                    top = top + boxes[l].getBoundingClientRect().height + separation;
-                    break;
-                }
-            }
-            l = l -availableColumns.length;
+        
+        /**
+         * To find all the initial heights and separations
+         */
+        let n = m - availableColumns.length, pixelsFromTop = 0;
+        while(n >= 0){
+            pixelsFromTop = pixelsFromTop + separation + boxes[n].getBoundingClientRect().height;
+            n = n - availableColumns.length;
         }
 
-        element.style.top = (top - rowBottom+document.getElementsByClassName("mosaic")[0].offsetTop) + "px";
-    }*/
+        let top = document.getElementsByClassName("mosaic")[0].offsetTop + pixelsFromTop;
+        
+        boxes[m].style.top = (top - rowTop) + "px";
+
+        if(m%availableColumns.length == (availableColumns.length -1))
+            rowTop = rowBottom;
+
+        /**
+         * This code gets the largest bottom and updates the height of the mosaic
+         * Get the bottoms of the last row and use them to set the height;
+         */
+
+    }
 }
 
 let boxes = document.getElementsByClassName("box");
-setTimeout(()=>{
+setInterval(()=>{
     mosaic(document.getElementsByClassName("box"), 20);
-    document.getElementsByClassName("mosaic")[0].height = boxes[boxes.length-1].offsetTop+boxes[boxes.length-1].getBoundingClientRect().height+"px";
 }, 2000)
-const removeMosiac = () => {
+const removeMosaic = () => {
     let i;
     for(i=0; i < boxes.length; i++){
         boxes[i].style.top = "0px";
