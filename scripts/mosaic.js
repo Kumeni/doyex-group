@@ -67,7 +67,6 @@ function mosaic(boxes, separation=30){
          * This code gets the largest bottom and updates the height of the mosaic
          * Get the bottoms of the last row and use them to set the height;
          */
-
     }
 }
 
