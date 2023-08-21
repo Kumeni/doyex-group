@@ -76,12 +76,5 @@ function mosaic(boxes, separation=30){
 
 let boxes = document.getElementsByClassName("box");
 setInterval(()=>{
-    mosaic(document.getElementsByClassName("box"), 20);
+    mosaic(document.getElementsByClassName("box"), 5);
 }, 2000)
-const removeMosaic = () => {
-    let i;
-    for(i=0; i < boxes.length; i++){
-        boxes[i].style.top = "0px";
-    }
-}
-window.addEventListener("resize", removeMosaic());
