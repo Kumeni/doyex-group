@@ -76,5 +76,5 @@ function mosaic(boxes, separation=30){
 
 let boxes = document.getElementsByClassName("box");
 setInterval(()=>{
-    mosaic(document.getElementsByClassName("box"), 5);
+    mosaic(document.getElementsByClassName("box"), 20);
 }, 2000)
